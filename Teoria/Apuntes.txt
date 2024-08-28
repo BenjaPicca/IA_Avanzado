@@ -1,0 +1,53 @@
+16/8
+### REPASO CLASE 14/8
+
+DATASET=MATRIZ
+
+ERROR=LOSS FUNCTION
+
+
+RIPSHAPE(PARA TRANFORMAR EL VECTOR DE LATERAL  COMO LO QUIERA LA MATRIUZ)
+
+
+MSE(MEAN SQUARED ERROR)
+
+ERROR(BETA)
+
+B=(Xt.X a la -1)a la -1 .Xt.Y
+
+
+#REGRESIÓN LOGÍSTICA
+
+ES UNA VARIACIÓN DE LA REGRESIÓN LINEAL
+
+F(X)=1: 1+E a la -(B0+B1.X)
+
+e=2,7182.....
+ 
+UMBRAL=LA MITAD ENTRE O Y 1(MODIFICABLE(PUEDE SER 0,75))
+
+ACCURENCY= CUANTAS ERAN 1 Y DIJE 1 Y CUANTAS ERAN 0 Y DIJE 0:N
+
+TOTAL=(Tn+Tp+Fp+Fn)
+
+
+28/8
+
+Arboles de Decisión
+Grafico de clasificacion
+Permite hacer cortes en el grafico para clasificar. Devuelve la clase de mayor proporción.
+
+Grafico de regresion
+Para hacer la prediccion se hacen los cortes y se Devuelve el promedio
+
+Si tenes muchos cortes va haber Overfiting
+
+Tiene que haber siempre menos Hojas que muestras
+
+(Hojas serían las preguntas (si X2 >3)Si->rojo/no->azul)
+
+La altura del arbol= Cant preguntas
+
+Para empezar haces todos los corteds posibles y te vas a quedar con el menor ERROR usando MSE
+
+Cuando hay un dato muy diferente se lo llama Outlier.
