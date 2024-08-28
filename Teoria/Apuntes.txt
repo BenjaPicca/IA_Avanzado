@@ -51,3 +51,9 @@ La altura del arbol= Cant preguntas
 Para empezar haces todos los corteds posibles y te vas a quedar con el menor ERROR usando MSE
 
 Cuando hay un dato muy diferente se lo llama Outlier.
+
+Label Encoding 
+
+Es pasar una columna categorica a numerica, tiene ventajas y deventajas.
+
+One Hot Encoding seria que por cada valor categorico se lo define por booleano en caso de que si sea 1 en caso de que no 0
