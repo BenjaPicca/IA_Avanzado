@@ -29,7 +29,7 @@ UMBRAL=LA MITAD ENTRE O Y 1(MODIFICABLE(PUEDE SER 0,75))
 ACCURENCY= CUANTAS ERAN 1 Y DIJE 1 Y CUANTAS ERAN 0 Y DIJE 0:N
 
 TOTAL=(Tn+Tp+Fp+Fn)
-
+__________________________________________________________________________________________________________________________
 
 28/8
 
@@ -57,3 +57,53 @@ Label Encoding
 Es pasar una columna categorica a numerica, tiene ventajas y deventajas.
 
 One Hot Encoding seria que por cada valor categorico se lo define por booleano en caso de que si sea 1 en caso de que no 0
+__________________________________________________________________________________________________________________________
+
+
+30/9
+Practica
+
+__________________________________________________________________________________________________________________________
+
+4/9
+
+###Validacion
+
+DATASET=(X,Y) MATRIZ[x1,x2,xN][y1,y2,yN](La N seria el largo, y la cantidad de X o Y que hay)
+X=Variables Predictoras
+
+f¬(x)=y
+Se entrena con X train,Y train 
+C:MSE
+Para ver la performance del grafico agarramos el DATASETy lo partimos en Train y Test.
+Costo(f¬(Xtest,YTest))
+
+###Estrategia de Validación(Tema Nuevo de hoy)
+
+(Hiper parametros)
+Max-depth
+min-learn-split
+min-child-weight
+3estrategias
+
+1. Tengo todo el DATASET y dividimos en Train Test y Validacion
+    1ra estrategia Holdout Set
+        se compara F1¬ co Validacion en caso de que sean 3f se hace con los tres y te quedas con el más preciso.
+        El más preciso seria el que tiene mejores hiperParametros para Validacion
+            2da estrategia Cross Validacion(Leave one out)
+                Va a agarrar un solo dato y lo deja afuera agarra todos menos uno para entrenar. 
+                Agarro F1¬ y comparo con val1 C(F1¬,val1)despues van a quedar 2 datos menos que el otro seria val2 y asi 
+                y va a validar con el dato agregado y el otro que se uso para validar queda para entrenar 
+                C(F1¬,N train)
+                    3ra Estrategia K-Fold
+                        dividimosel DATASET en cuato folds quieras
+                        Tengo 80 datos, los “foldeo” 4 veces, tengo 4 secciones de 20 datos.
+                        Cada fold es un conjunto, el modelo son K valores.
+                        En este caso, K es 4, ya que tengo 4 folds.
+                        Cada conjunto se utiliza 1 vez para validar.
+                        Comparado a el modelo leave one out, este es mucho mas simplificante, ya que con este se valida K
+                        veces y con el otro se valida la cantidad de veces como cuantos datos tengas en el modelo (Ej: 79 veces)
+__________________________________________________________________________________________________________________________
+
+6/9
+
