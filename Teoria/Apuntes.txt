@@ -107,3 +107,27 @@ ________________________________________________________________________________
 
 6/9
 
+###Ensambles
+
+Metodo BootStrap
+
+
+Ensamblar= Unir modelos
+
+Vamos a poner a entrenar los ensambles con distintas partes dell conjunto de Train.
+
+Lo que va hacer este Metodo es que teniendo un dataset de Xp de ancho y Xn de largo y devuelven valores Y hasta N
+
+A todo este conjunto de trains lo vamos a llamar Z.
+
+Z0 va a mustrear un valor por ejemplo [X3,Y3],[X1,Y1][X3,Y3] Cunado elige de nuevo se llama samplear con reposición.
+
+ 1er Formato de Ensable
+    Bagagging
+        BootStrap Agregating. F0¬,F1¬,F2¬. Todos estos los voy a usar para predecir (Falta explicar)
+2do
+    Random Forest
+        (No Anote)
+3er
+    Boosting
+        (No Anote)
