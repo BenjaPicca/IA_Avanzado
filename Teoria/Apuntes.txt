@@ -131,3 +131,22 @@ Z0 va a mustrear un valor por ejemplo [X3,Y3],[X1,Y1][X3,Y3] Cunado elige de nue
 3er
     Boosting
         (No Anote)
+__________________________________________________________________________________________________________________________
+
+13/9
+
+TruePositive=TP
+TrueNegative=TN
+FalsePositive=FP
+FalseNegative=FN
+
+Precision=TP/TP+FP 
+Recall=TP/TP+FN 
+Recall llamdo TPR (True positive Rate)
+
+También existe el FPR que seria lo contrario a TPR
+
+__________________________________________________________________________________________________________________________
+
+18/9
+
